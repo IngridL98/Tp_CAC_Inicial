@@ -15,7 +15,60 @@ box-sizing: border-box;
 font-family: "Open Sans", sans-serif;;
 }
 
-/* Estilos para la botonera */
+body{
+    background-image: url('/statics/img/fondo_registro.jpg');
+}
+.form-wrapper{
+    width: 400px;
+    background-color: var(--bg-color) ;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--secondary-color);
+    box-shadow: 7px 15px 42px #130000;
+
+}
+
+.form-wrapper h2{
+    font-size: 24px;
+    margin-bottom: 22px;
+    margin-left: 30%;
+}
+
+.form-control{
+    width: 100%;
+    background-color: var(--bg-input-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--primary-color) ;
+
+}
+.form-wrapper p {
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.form-wrapper a {
+    color: var(--third-color);
+    text-decoration: none;
+
+}
+
+.boton {
+    width: 50%;
+    border-radius: 3%;
+    border-color: #522a1e;
+    background: var(--third-bis-color);
+    padding: 10px;
+    color:white;
+    font-size: 18px;
+}
+
+/* Estilos para la botonera 
 #botonera {
     display: flex;
     justify-content: center;
@@ -39,18 +92,16 @@ font-family: "Open Sans", sans-serif;;
     background-color: #0056b3;
 }
 
-#logo{
-    font-weight: bold;
-    .sedan-sc-regular {
-        font-family: "Sedan SC", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-    font-family: ;
-    
+
+#texto-logo{
+    font-family: 'Sedan SC', serif;
+    font-weight: 400;
+    font-style: normal;
 }
-a{
+    
+
+#botonera a{
     text-decoration: none;
 
-}
+}*/
     

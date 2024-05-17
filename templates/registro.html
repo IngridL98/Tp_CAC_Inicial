@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="statics/css/style.css">
     <title>registro</title>
 
     </head>
@@ -20,7 +21,7 @@
         <nav>
             <div class="logo">
                 <a href="../">
-                    <i class="fas fa-film"></i>
+                    <i class="fas fa-film"></i><!-- que es eso-->
                     <span class="logo-texto">
                         INJEMAR
                     </span>
@@ -36,12 +37,13 @@
             <form action="#" id="formRegister" method="GET" novalidate>
                 <div class="form-control">
                     <label>Nombre</label>
-                    <input type="text" required name="firstname" id="firstname">
+                    <input type="text" required name="firstname" id="nombre" placeholder="Ingrese su nombre">
                 </div>
                 <div class="error" id="error-firstname"></div>
                 <div class="form-control">
+
                     <label>Apellido</label>
-                    <input type="text" required name="lastname" id="lastname">
+                    <input type="text" required name="lastname" id="Apellido" placeholder="Ingrese su apellido">
                 </div>
                 <div class="error" id="error-lastname"></div>
                 <div class="form-control">
@@ -51,12 +53,12 @@
                 <div class="error" id="error-email"></div>
                 <div class="form-control">
                     <label>Contraseña</label>
-                    <input type="password" required name="password" id="password">
+                    <input type="password" required name="password" id="contraseña">
                 </div>
                 <div class="error" id="error-password"></div>
                 <div class="form-control">
                     <label id="label-birthdate">Fecha de Nacimiento</label>
-                    <input type="date" required name="birthdate" id="birthdate">
+                    <input type="date" required name="birthdate" id="fecha_nac">
                 </div>
                 <div class="form-control">
                     <select name="country" id="country" class="form-select">
@@ -76,9 +78,10 @@
                 <div class="form-terms"> 
                     <div class="terms">
                         <input type="checkbox" id="terms">
-                        <label for="terms">Acepto términos y condiciones</label>
+                        <label for="terms">Acepto los <a href="#"> terminos y condiciones</a></label>
                     </div>
                 </div>
+                <p><a href="#"> ¿Ya tengo una cuenta?</a></p>
                 <button type="button" id="btn-enviar">Registrarse</button>
                 <div class="form-help"> 
                     <a href="#">Necesitas ayuda?</a>
