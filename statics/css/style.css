@@ -7,7 +7,6 @@
 --bg-input-color: #4f31572c;    
 }
 
-
 * {
 margin: 0;
 padding: 0;
@@ -46,11 +45,91 @@ font-family: "Open Sans", sans-serif;;
         font-weight: 400;
         font-style: normal;
     }
-    font-family: ;
-    
+
 }
 a{
     text-decoration: none;
 
 }
     
+/* ---- Estilos pagina QUIENES SOMOS ----*/
+#header-QS{
+    background-color:#bbb;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#logo-QS p{
+    margin:0 20px;
+    font-weight: bold;
+    font-size: larger;
+    color:var(--primary-color)
+}
+.nav-QS{
+    margin:0 20px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+}
+
+.nav1 a{
+    padding: 10px;
+    margin:5px;
+    color: white;
+    font-size: small;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.nav1 a:hover{
+background-color: rgba(137, 43, 62, 0.5);
+color: black;
+font-weight: bold;
+}
+
+#banner-QS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/banner-QS.jpg);
+    background-size: cover;
+    /* background-repeat: none; */
+    background-position: center;
+    height: 300px;
+    margin: 30px 0;
+}
+
+#banner-QS h1{
+color: white;
+padding: 5px 5px;
+background-color: rgba(0,0,0,0.5);
+border-radius: 10px;
+}
+
+.color-injemar{
+    color: var(--primary-color);
+}
+
+#somosINJEMAR-QS{
+    background-color: #bbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px 15px;
+
+}
+#somosINJEMAR-QS p{
+    margin: 15px;
+}
+
+#somosINJEMAR-QS img{
+    width: 250px;
+    margin: 30px;
+}
