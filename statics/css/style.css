@@ -16,7 +16,9 @@ font-family: "Open Sans", sans-serif;;
 }
 
 body{
-    background-image: url('/statics/img/fondo_registro.jpg');
+    background-image: url('/statics/img/hoja_palmera.jpg');
+    background-size: contain;
+    
 }
 .form-wrapper{
     width: 400px;
@@ -67,41 +69,17 @@ body{
     color:white;
     font-size: 18px;
 }
+.logo-texto {
+    color:#fc0543;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 30%;
+    
+}
 
-/* Estilos para la botonera 
-#botonera {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    font-family: "Sedan SC", serif;
+.logo-texto a{
     text-decoration: none;
 }
-.boton {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 16px;
-    
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.boton:hover {
-    background-color: #0056b3;
-}
 
 
-#texto-logo{
-    font-family: 'Sedan SC', serif;
-    font-weight: 400;
-    font-style: normal;
-}
-    
-
-#botonera a{
-    text-decoration: none;
-
-}*/
     
