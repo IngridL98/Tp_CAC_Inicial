@@ -15,8 +15,116 @@ box-sizing: border-box;
 font-family: "Open Sans", sans-serif;;
 }
 
+body {
+    background-color: #E5E8E8; 
+}
+
+h1 { 
+    font-size: 3.5em;
+}
+
+h2 { 
+    font-size: 2.7em; 
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+	height: 100px;
+	/*background: #5DADE2;*/
+	background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 1%, rgba(41,35,41,1) 39%);
+}
+
+.header .nav-container {
+	display: flex;
+	/*justify-content: space-around;*/
+    justify-content: space-between;
+    /*height: 60px;*/
+	align-items: center;
+    padding: 15px 60px;
+}
+/* ESTILO PARA EL LOGO */
+#logo #texto-logo1{
+	text-align: center;
+    font-size: 3em;
+    font-family: "Jaro";
+    color:whitesmoke;
+	letter-spacing: 1px;
+}
+#logo #texto-logo2{
+	font-size: 2em;
+	color:whitesmoke;
+	letter-spacing: 1px;
+	font-family: Inter UI;
+}
+/* ESTILO PARA LA NAVEGACION */
+.nav-links {
+	display: flex;    
+    gap: 50px;
+	
+}
+.header .nav-container .nav-links li a{
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+    margin:5px;
+    color: #16D9DB;
+    font-size: 1em;
+    /*background-color: #16D9DB;*/
+    border-radius: 10px;
+	border: 2px solid #16D9DB;
+    font-weight: bold;
+	text-transform: uppercase;
+	z-index: 1;
+	overflow: hidden;
+	transition: 1s;
+	transition-delay: 0s, 1s;
+}
+
+.header .nav-container .nav-links li a:hover {
+	color: #FFFFFF;
+	box-shadow: 
+		0 0 10px #16D9DB,
+		0 0 20px #16D9DB,
+		0 0 40px #16D9DB,
+		0 0 80px #16D9DB,
+		0 0 160px #16D9DB;
+}
+.header .nav-container .nav-links li a::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: -50px;
+	width: 0;
+	height: 100%;
+	background: #16D9DB;
+	transform: skewX(35deg);
+	z-index: -1;
+	transition: 1s;
+}
+
+.header .nav-container .nav-links li a:hover:before {
+	width: 100%;
+}
+
 /* Estilos para la botonera */
-#botonera {
+/*#botonera {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -52,5 +160,5 @@ font-family: "Open Sans", sans-serif;;
 a{
     text-decoration: none;
 
-}
+}*/
     
