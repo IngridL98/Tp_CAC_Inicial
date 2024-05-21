@@ -15,6 +15,7 @@ box-sizing: border-box;
 font-family: "Open Sans", sans-serif;;
 }
 
+<<<<<<< HEAD
 body {
     background-color: #E5E8E8; 
 }
@@ -351,30 +352,77 @@ a {
     padding: 10px 20px;
     margin: 0 10px;
     font-size: 16px;
+=======
+body{
+    background-image: url('/statics/img/hoja_palmera.jpg');
+    background-size: contain;
+>>>>>>> rama2
     
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
-.boton:hover {
-    background-color: #0056b3;
+.form-wrapper{
+    width: 400px;
+    background-color: var(--bg-color) ;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--secondary-color);
+    box-shadow: 7px 15px 42px #130000;
+
 }
 
-#logo{
-    font-weight: bold;
-    .sedan-sc-regular {
-        font-family: "Sedan SC", serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-    font-family: ;
-    
+.form-wrapper h2{
+    font-size: 24px;
+    margin-bottom: 22px;
+    margin-left: 30%;
 }
-a{
+
+.form-control{
+    width: 100%;
+    background-color: var(--bg-input-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--primary-color) ;
+
+}
+.form-wrapper p {
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.form-wrapper a {
+    color: var(--third-color);
     text-decoration: none;
 
+<<<<<<< HEAD
 }*/
+=======
+}
+
+.boton {
+    width: 50%;
+    border-radius: 3%;
+    border-color: #522a1e;
+    background: var(--third-bis-color);
+    padding: 10px;
+    color:white;
+    font-size: 18px;
+}
+.logo-texto {
+    color:#fc0543;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 30%;
+    
+}
+
+.logo-texto a{
+    text-decoration: none;
+}
+
+
+>>>>>>> rama2
     
