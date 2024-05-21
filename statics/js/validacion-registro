@@ -2,8 +2,8 @@ let btnSend = document.querySelector("#btn-send");
 
 //ESCUCHAR UN EVENTO
 btnSend.addEventListener('click',function(){
-    let firstname = document.querySelector("#firstname");
-    let lastname = document.querySelector("#lastname");
+    let firstname = document.querySelector("#nombre");
+    let lastname = document.querySelector("#apellido");
     let email = document.querySelector("#email");
     //Expresiones regulares
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
