@@ -365,7 +365,6 @@ a {
 
 }
 
-<<<<<<< HEAD
 #logo{
     font-weight: bold;
     .sedan-sc-regular {
@@ -374,12 +373,6 @@ a {
         font-style: normal;
     }
 
-=======
-.form-wrapper h2{
-    font-size: 24px;
-    margin-bottom: 22px;
-    margin-left: 30%;
->>>>>>> cfda65d524ad8e50285b944f1e0c95a4faa33ecc
 }
 
 .form-control{
@@ -428,27 +421,34 @@ a {
     
 /* ---- Estilos pagina QUIENES SOMOS ----*/
 #header-QS{
-    background-color:#bbb;
-    height: 50px;
+    background-color:var(--bg-color);
+    height:auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border:5px solid var(--primary-color);
+    flex-wrap: wrap;
     
 }
 #logo-QS p{
     margin:0 20px;
     font-weight: bold;
     font-size: larger;
-    color:var(--primary-color)
+    color:var(--secondary-color)
 }
 .nav-QS{
-    margin:0 20px;
+    margin:10px 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
     padding: 10px;
+    width: auto;
 }
-
+.nav-QS li{
+    margin: 10px;
+}
 .nav1 a{
     padding: 10px;
     margin:5px;
@@ -460,7 +460,7 @@ a {
 }
 
 .nav1 a:hover{
-background-color: rgba(137, 43, 62, 0.5);
+background-color: rgba(183, 173, 175, 0.5);
 color: black;
 font-weight: bold;
 }
@@ -475,6 +475,7 @@ font-weight: bold;
     background-position: center;
     height: 300px;
     margin: 30px 0;
+    border:3px solid var(--primary-color);
 }
 
 #banner-QS h1{
@@ -482,6 +483,11 @@ color: white;
 padding: 5px 5px;
 background-color: rgba(0,0,0,0.5);
 border-radius: 10px;
+}
+
+#banner-QS h1:hover{
+    color:black;
+    background-color: rgba(137, 43, 62, 0.5);
 }
 
 .color-injemar{
@@ -497,6 +503,8 @@ border-radius: 10px;
     text-align: center;
     margin: 30px 0;
     padding: 10px 15px;
+    border:3px solid var(--primary-color);
+
 
 }
 #somosINJEMAR-QS p{
@@ -506,4 +514,66 @@ border-radius: 10px;
 #somosINJEMAR-QS img{
     width: 250px;
     margin: 30px;
+}
+
+#donde-encontrarnos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:3px solid var(--primary-color);
+    margin: 30px 0;
+    height: auto;
+    background-color: var(--bg-color);
+}
+#donde-encontrarnos h2,h3{
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    /* background-color: rgba(0,0,0,0.5); */
+    color: var(--secondary-color);
+    /* border: 2px solid black; */
+
+}
+
+
+#map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:30px 0;
+    width: 100%;
+   
+}
+
+#map iframe{
+    margin-top: 10px;
+    padding: 2px;
+    background-color: black;
+    width: 50%;
+}
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    height: auto;
+    /* text-align: center; */
+    margin: 15px 0;
+}
+.redesSociales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+    margin: 10px;
+}
+ #footer-QS{
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
