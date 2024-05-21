@@ -123,6 +123,222 @@ a {
 	width: 100%;
 }
 
+/*************** ESTILO <!-- Elegí tu destino"--> ************/
+.container {
+	width: 100%;
+	/*height: 100px;*/
+	background: #16D9DB ;
+}
+.container {
+	margin: 10px 0px;
+	padding:40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container .search-input{
+	display: flex;
+}
+.container .search-input .text {
+	border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    margin: 10px 0px;
+    /* QUITA EL EFECTO DE BORDE AL INPUT AL SELECCIONARLO */
+    outline: none;
+    padding: 0px 20px;
+    width: 70%;
+}
+.container .search-input .date {
+	border: 2px solid white;
+    border-radius: 25px;
+    color: #000000;
+    font-size: 16px;
+    height: 50px;
+    margin: 10px 10px;
+    /* QUITA EL EFECTO DE BORDE AL INPUT AL SELECCIONARLO*/
+    outline: none;
+    padding: 0px 20px;
+    width: 70%;
+}
+.container .search-input .btn-search {
+	height: 50px;
+	padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #AB4DE8;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/*************** ESTILO <!-- Seccion de "Viajes al exterior"--> ************/
+#vext {
+	text-align: center;
+}
+#vext h2 {
+	margin: 50px 0px;
+}
+.container .vext-grid {
+	display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    gap: 20px;
+}
+.container .vext-grid .vext-item {
+	overflow: hidden;
+    position: relative;
+    display: inline-block;
+	/*border: 10px solid #000000;*/
+	width: 300px;
+    height: 400px;
+    font-size: 20px;
+    /*cursor: pointer;*/
+}
+
+.container .vext-grid .vext-item .title-card {
+	padding-top: 20px ;
+	text-align: center;
+	font-weight: 700;
+}
+
+.container .vext-grid .vext-item .vext-item-img {
+	width: 100%;
+	height:300px;
+	object-fit: cover;
+	box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3),
+                0px 15px 12px 0px rgba(0,0,0,0.22);
+}
+
+
+.container .vext-grid .vext-item .vext-item-detail {
+	/*text-align: center;*/
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100%;
+	position: absolute;
+	background: #1F3D4780;
+	backdrop-filter: blur(5px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.container .vext-grid .vext-item:hover .vext-item-detail {
+	right: 0;
+}
+.container .vext-grid .vext-item .vext-item-detail .vext-item-detail-title{
+	color: #FFFFFF;
+	padding-top: 50px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 800;
+}
+.container .vext-grid .vext-item .vext-item-detail .vext-item-detail-info {
+	font-size: 20px;
+	line-height: 35px;
+	margin: 30px 0;
+	font-weight: 700;
+	color: #75EA2E;
+}
+.container .vext-grid .vext-item .vext-item-detail .btn-card {
+	height: 50px;
+	padding: 10px 20px;
+    margin: 10px 60px;
+    color: white;
+    font-size: 20px;
+    background-color: #AB4DE8;
+    border-radius: 10px;
+    font-weight: bold;
+	cursor: pointer;
+}
+/*************** ESTILO <!-- Seccion de "Vacaciones en Argentina"--> ************/
+#varg {
+	text-align: center;
+}
+#varg h2 {
+	margin: 50px 0px;
+}
+
+.container .varg-grid {
+	display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    gap: 20px;
+}
+.container .varg-grid  .varg-item {
+	overflow: hidden;
+    position: relative;
+    /*display: inline-block;*/
+	/*border: 10px solid #000000;*/
+	width: 300px;
+    height: 400px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .varg-grid .varg-item .title-card {
+	padding-top: 20px ;
+	text-align: center;
+	font-weight: 700;
+}
+
+.container .varg-grid .varg-item .varg-item-img {
+	width: 100%;
+	height:300px;
+	object-fit: cover;
+	box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3),
+                0px 15px 12px 0px rgba(0,0,0,0.22);
+}
+
+
+.container .varg-grid .varg-item .varg-item-detail {
+	/*text-align: center;*/
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100%;
+	position: absolute;
+	background: #1F3D4780;
+	backdrop-filter: blur(5px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.container .varg-grid .varg-item:hover .varg-item-detail {
+	right: 0;
+}
+.container .varg-grid .varg-item .varg-item-detail .varg-item-detail-title{
+	padding-top: 50px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+.container .varg-grid .varg-item .varg-item-detail .varg-item-detail-info {
+	font-size: 20px;
+	line-height: 35px;
+	margin: 30px 0;
+	font-weight: 700;
+	color: #75EA2E;
+}
+.container .varg-grid .varg-item .varg-item-detail .btn-card {
+	height: 50px;
+	padding: 10px 20px;
+    margin: 10px 60px;
+    color: white;
+    font-size: 20px;
+    background-color: #AB4DE8;
+    border-radius: 10px;
+    font-weight: bold;
+	cursor: pointer;
+}
+
 /* Estilos para la botonera */
 /*#botonera {
     display: flex;
