@@ -25,23 +25,21 @@
 </head>
 <body>
     <!-- Contenido de tu página -->
-    <header class = "header">
-        <!-- <h1>Bienvenidos</h1>
-        <h2>Arma el viaje de tus sueños</h2> -->
-		<nav class= "nav-container">
-			<div id="logo">
-				<span id="texto-logo1">INJEMAR</span><span id="texto-logo2"> VIAJES</span>
-
-			</div>
-			
-			 
-			<ul class="nav-links">
-				<li><a href="/templates/destinos.html">Destinos</a></li>
-				<li><a href="templates/quienes-somos.html">Quienes somos</a></li>
-				<li><a href="/templates/registro.html">Iniciar sesión</a></li>
-				<li><a href="/templates/registro.html">Registrarse</a></li>
-			</ul>
-		</nav>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <p>
+                    INJEMAR - VIAJES
+                </p>
+            </div>
+            <div>
+                <nav class="nav-header">
+                    <li class="nav"><a href="./templates/destinos.html">Destinos</a></li>
+                    <li class="nav"><a href="./templates/quienes-somos.html">Quienes somos</a></li>
+                    <li class="nav"><a href="./templates/registro.html">Registrarse</a></li>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
         <!-- Seccion de "Elegí tu destino"-->
@@ -218,7 +216,35 @@
        
    </main>
     <footer>
-        <p>2024. Todos los derechos reservados.</p>
+        <div class="container-footer">
+			<div class="footer-content">
+				<h3>Contacto</h3>
+				<p>Email: Info@ejemplo.com</p>
+				<p>Tel: 777-77777</p>
+				<p>Direccion: Address 1234 street</p>
+			</div>
+			<div class="footer-content">
+				<h3>Links</h3>
+				<ul class="links">
+					<li><a href="">Destinos</a></li>
+					<li><a href="">Quienes somos</a></li>
+				</ul>
+			</div>
+			<div class="footer-content">
+				<h3>Redes Sociales</h3>
+				<ul class="icon-social">
+					<li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="p-final">
+			<p>&copy; 2024. Todos los derechos reservados.</p>
+		</div>
     </footer>
 </body>
 </html>
