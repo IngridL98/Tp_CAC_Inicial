@@ -88,7 +88,14 @@ body{
     padding: 10px;
     margin-bottom: 10px;
     border: 2px solid #9f3647 ;
-
+    border-radius: 5px;
+}
+.form-control input, select{ /* Se agrega para sacar fondo blanco en los input*/
+    background-color: #9f3647;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
 }
 .form-wrapper p {
     height: 40px;
@@ -103,7 +110,7 @@ body{
 
 }
 
-.boton {
+.boton {    /* se agrega para centrar el boton*/
     display: flex;
     justify-content: center;
     width: 100%;
@@ -117,7 +124,7 @@ body{
     font-size: 18px;
 }
 
-.form-help{
+.form-help{  /*se agrega para centrar 'necesitas ayuda?'*/
     display: flex;
     justify-content: center;
 }
@@ -178,4 +185,8 @@ body{
     display: flex;
     align-items: end;
     height: 50px;
+}
+
+#error-nombre{
+    color:red;
 }

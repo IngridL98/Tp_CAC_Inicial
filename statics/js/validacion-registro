@@ -11,7 +11,7 @@ btnSend.addEventListener('click',function(){
 
     console.log(firstname.value.trim().length);
     if(firstname.value.trim()=='' || firstname.value.trim().length < 3 ){
-        document.querySelector("#error-firstname").innerHTML ="El nombre ingresado no es válido";
+        document.querySelector("#error-nombre").innerHTML ="El nombre ingresado no es válido";
         //alert('ERROR! Debes completar el campo Nombre');
     }
 
