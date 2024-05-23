@@ -17,6 +17,7 @@
     margin: 0;
  }
 
+ /* Estilo para el header */
 #header-QS{
     background-color:var(--bg-color);
     height:auto;
@@ -64,6 +65,7 @@ color: black;
 font-weight: bold;
 }
 
+/* Estilo para el la seccion del banner */
 #banner-QS{
     display: flex;
     justify-content: center;
@@ -93,6 +95,7 @@ border-radius: 10px;
     color: var(--primary-color);
 }
 
+/* Estilo para la seccion de somos injemar */
 #somosINJEMAR-QS{
     background-color: #bbb;
     display: flex;
@@ -115,6 +118,8 @@ border-radius: 10px;
     margin: 30px;
 }
 
+
+/* Estilo para seccion donde encontrarnos */
 #donde-encontrarnos{
     display: flex;
     flex-direction: column;
@@ -171,6 +176,8 @@ border-radius: 10px;
     width: 50%;
     margin: 10px;
 }
+
+/* Estilo footer */
  #footer-QS{
     display: flex;
     /* justify-content: center; */
