@@ -10,17 +10,179 @@
     }
     
 
-body{
+/* body{
     max-width: 1200px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: var(--bg-color);
-    
-}
-img{
-    max-width: 100%;
+} */
+
+*{
+    font-family: "Open Sans", sans-serif;
 }
 
-.container-items{
+/* img{
+    max-width: 100%;
+} */
+/* Estilo Header */
+#header-DE{
+    background-color:var(--bg-color);
+    height:auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:5px solid var(--primary-color);
+    flex-wrap: wrap; 
+}
+
+#logo-DE p{
+    margin:0 20px;
+    font-weight: bold;
+    font-size: larger;
+    color:var(--secondary-color)
+}
+.nav-DE{
+    margin:10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+    width: auto;
+}
+.nav-DE li{
+    margin: 10px;
+}
+.nav1 a{
+    padding: 10px;
+    margin:5px;
+    color: white;
+    font-size: small;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav1 a:hover{
+background-color: rgba(183, 173, 175, 0.5);
+color: black;
+font-weight: bold;
+}
+
+/* Estilo banner */
+#banner-DE{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/banner-DE.jpg);
+    background-size: cover;
+    /* background-repeat: none; */
+    background-position: center;
+    height: 300px;
+    margin: 15px 0;
+    border:3px solid var(--primary-color);
+}
+#banner-DE h1{
+    color: white;
+    padding: 5px 5px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    }
+    
+    #banner-DE h1:hover{
+        color:black;
+        background-color: rgba(250,250,250, 0.5);
+    }
+
+    /* Estilo seccion viajes al exterior */
+
+    #viajes-exterior-DE{
+        /* text-align: center; */
+        background-color: #bbb;
+        padding: 30px 0;
+        margin: 15px 0 25px;
+    }
+    #viajes-exterior-DE h2{
+        text-align: center;
+    }
+.destinos-exterior{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+/* background-color: #bbb; */
+padding: 10px 0;
+margin: 20px 0;
+}
+img{
+    width: 100%;
+}
+
+.item1{
+    width: 250px;
+    margin: 10px 3px;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+.item1 h4{
+    color: var(--bg-color);
+}
+.item1:hover{
+    width: 260px;
+    box-shadow: 10px 10px 0 0 rgba(0,0,0,0.3);
+}
+
+#viajes-arg-DE{
+    /* text-align: center; */
+    background-color: #bbb;
+    padding: 30px 0;
+    margin: 25px 0 0 0;
+}
+#viajes-arg-DE h2{
+    text-align: center;
+    /* font-size:;*/
+}
+
+.destinos-arg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: #bbb; */
+    padding: 10px 0;
+    margin: 20px 0;
+    }
+
+.item2{
+        width: 250px;
+        margin: 10px 3px;
+        border: 2px solid var(--bg-color);
+        border-radius: 10px;
+        text-align: center;
+        background-color: white;
+}
+.item2 h4{
+    color: var(--bg-color);
+}
+.item2:hover{
+    width: 260px;
+    box-shadow: 10px 10px 0 0 rgba(0,0,0,0.3);
+}
+
+footer{
+    display: flex;
+    align-items: end;
+    height: 50px;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+
+
+/* .container-items{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
@@ -70,4 +232,4 @@ img{
     border-color: #522a1e;
     
 
-}
+} */
