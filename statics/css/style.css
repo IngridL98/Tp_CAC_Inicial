@@ -69,6 +69,12 @@ a {
     padding: 10px;
     width: auto;
 }
+.nav-header .nav-user {
+	display: none;
+}
+.nav-header .nav-menu{
+	display: none;
+}
 .nav-header li {
     margin: 10px;
 }
@@ -389,6 +395,58 @@ h3 {
 	margin: 0;
 	font-size: 16px;
 	padding: 7px;
+}
+/********** Pantallas grandes ***********/
+
+@media screen and (max-width: 1920px) {
+	
+}
+
+/********* TABLETS ************/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.container .vext-grid {
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(4,1fr);
+	}
+	.container .varg-grid {
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows: repeat(4,1fr);
+	}
+	.container #search {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/******* CELULARES ***************/
+
+@media screen and (max-width: 767px) {
+	.nav-header .menu-pc{
+		display: none;
+	}
+	.nav-header .nav-user{
+		display: flex;
+		size: 25px;
+	}
+	.nav-header .nav-menu{
+		display: flex;
+		size: 25px;
+	}
+	
+	.container .vext-grid {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.container .varg-grid {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.container-footer {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-top: 20px;
+		width:100%;
+	}
 }
 /* Estilos para la botonera */
 /*#botonera {
