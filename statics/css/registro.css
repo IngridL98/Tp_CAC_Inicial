@@ -104,7 +104,11 @@ body{
 }
 
 .boton {
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.boton1{
     border-radius: 3%;
     border-color: #522a1e;
     background: var(--third-bis-color);
@@ -112,6 +116,13 @@ body{
     color:white;
     font-size: 18px;
 }
+
+.form-help{
+    display: flex;
+    justify-content: center;
+}
+
+
 #logo #texto-logo1 {
     text-align: center;
     font-size: 3em;

@@ -7,6 +7,7 @@ btnSend.addEventListener('click',function(){
     let email = document.querySelector("#email");
     //Expresiones regulares
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+}
 
     console.log(firstname.value.trim().length);
     if(firstname.value.trim()=='' || firstname.value.trim().length < 3 ){
