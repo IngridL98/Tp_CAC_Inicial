@@ -23,6 +23,7 @@ h2 {
 
 h3 {
     font-size: 1.8em;
+    color: var(--secondary-color);
 }
 
 *{
@@ -131,7 +132,7 @@ img{
 
 .item1{
     width: 250px;
-    margin: 10px 3px;
+    margin: 10px 10px;
     border: 2px solid var(--bg-color);
     border-radius: 10px;
     text-align: center;
