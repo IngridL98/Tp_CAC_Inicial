@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="/statics/img/favicon.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Trabajo_CAC</title>
     <!-- Enlaces a hojas de estilo CSS -->
     <link rel="stylesheet" href="statics/css/style.css">
@@ -23,30 +23,228 @@
 <body>
     <!-- Contenido de tu página -->
     <header>
-        <h1>Bienvenidos</h1>
-        <h2>Arma el viaje de tus sueños</h2>
-        <nav>
+        <div id="header">
             <div id="logo">
-                <span id="texto-logo">
+                <p>
                     INJEMAR - VIAJES
-                </span>
+                </p>
             </div>
-            
-            <div id="botonera">
-            <ul>
-                <li><a href="./templates/destinos">Destinos</a></li>
-                <li><a href="./templates/registro.html">Registrarse</a></li>
-                <li><a href="./templates/quienes-somos.html">Quienes somos</a></li>
-            </ul>
+            <div>
+                <nav class="nav-header">
+                    <li class="nav nav-user"><a href=""><i class="fa-regular fa-user"></i></a></li>
+					<li class="nav nav-menu"><a href=""><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="nav menu-pc"><a href="./templates/crud.html">Crud</a></li>
+                    <li class="nav menu-pc"><a href="./templates/destinos.html">Destinos</a></li>
+                    <li class="nav menu-pc"><a href="./templates/quienes-somos.html">Quienes somos</a></li>
+                    <li class="nav menu-pc"><a href="./templates/registro.html">Registrarse</a></li>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
     <main>
-        <h2>Contenido Principal</h2>
-        <p>Bienvenido a Mi Sitio Web. Aquí puedes encontrar información interesante sobre...</p>
-    </main>
+        <!-- Seccion de "Elegí tu destino"-->
+       <section class="container" id="search">
+           <h2 class="search-title">Elegí tu destino</h2>
+           <div class="search-input">
+               <input type="text" class="text" size="50" placeholder="Ingrese destino">
+               <input type="date" class="date">
+               <a href="" class="btn-search">Buscar</a>
+           </div>
+       </section>
+       <!-- Seccion de "Viajes al exterior"-->
+       <section id="vext">
+            <div class="container">
+                <h2>Viajes al exterior</h2>
+                <div id="vext-list" class="vext-grid">
+                    <div class="vext-item">
+                     <!-- <a href="">-->
+                        <img class="vext-item-img" src="./statics/img/brasil.jpg" alt="Brasil Rio de Janeiro">
+                        <p class="title-card">Brasil</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Rio de Janeiro</h3>
+                            <p class="vext-item-detail-info">desde U$S 2000</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                    <!-- </a> -->
+                </div>
+                <div class="vext-item">
+                        <img class="vext-item-img" src="./statics/img/china.jpg" alt="Imagen de la  Muralla china">
+                        <p class="title-card">China</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Tour por la Muralla china</h3>
+                            <p class="vext-item-detail-info">desde U$S 8000</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="vext-item">
+                        <img class="vext-item-img" src="./statics/img/singapur.jpg" alt="Imagen de Singapur">
+                        <p class="title-card">Singapur</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Singapur</h3>
+                            <p class="vext-item-detail-info">desde U$S 7500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="vext-item">
+                        <img class="vext-item-img" src="./statics/img/inglaterra.jpg" alt="Imagen Inglaterra Londres">
+                        <p class="title-card">Inglaterra</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Londres</h3>
+                            <p class="vext-item-detail-info">desde U$S 5500</p>
+                            <a href="" class="btn-card">ver mas</a>
+                        </div>
+                </div>
+                <div class="vext-item">
+                        <img class="vext-item-img" src="./statics/img/italia.jpg" alt="Italia, Roma">
+                        <p class="title-card">Italia</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Roma</h3>
+                            <p class="vext-item-detail-info">desde U$S 6500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="vext-item">
+                        <img class="vext-item-img" src="./statics/img/sidney.jpg" alt="Imagen de Australia, Sidney">
+                        <p class="title-card">Australia</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Sidney</h3>
+                            <p class="vext-item-detail-info">desde U$S 7500</p>
+                            <p class="btn-card">Ver mas</p>
+                        </div>
+                </div>
+                <div class="vext-item">
+                        <img class="vext-item-img" src="./statics/img/qatar.jpg" alt="Imagen de Qatar, Doha">
+                        <p class="title-card">Qatar</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Doha</h3>
+                            <p class="vext-item-detail-info">desde U$S 9500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="vext-item">
+                        <img class="vext-item-img" src="./statics/img/rusia.jpg" alt="Imagen de  Rusia Moscú">
+                        <p class="title-card">Rusia</p>
+                        <div class="vext-item-detail">
+                            <h3 class="vext-item-detail-title">Moscú</h3>
+                            <p class="vext-item-detail-info">desde U$S 9500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Seccion de "Vacaciones en Argentina"-->
+    <section id="varg">
+        <div class="container">
+            <h2>Vacaciones en Argentina</h2>
+            <div id="varg-list" class="varg-grid">
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/bariloche.jpg" alt="Imagen Rio Negro Bariloche">
+                        <p class="title-card">Rio Negro</p>
+                        <div class="varg-item-detail">
+                            <h3 class="varg-item-detail-title">Bariloche</h3>
+                            <p class="varg-item-detail-info">desde U$S 2500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/chubut.jpg" alt="Imagen Chubut Lago Puelo">
+                        <p class="title-card">Chubut</p>
+                        <div class="varg-item-detail">
+                            <h3 class="varg-item-detail-title">Lago Puelo</h3>
+                            <p class="varg-item-detail-info">desde U$S 3300</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/mendoza.jpg" alt="Imagen Mendoza San Rafael">
+                        <p class="title-card">Mendoza</p>
+                        <div class="varg-item-detail">
+                            <h3 class="vext-item-detail-title">San Rafael</h3>
+                            <p class="varg-item-detail-info">desde U$S 2500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/neuquén.jpg" alt="Imagen Neuquén Villa La Angostura">
+                        <p class="title-card">Neuquén</p>
+                        <div class="varg-item-detail">
+                            <h3 class="varg-item-detail-title">Villa La Angostura</h3>
+                            <p class="varg-item-detail-info">desde U$S 2500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/salta.jpg" alt="Imagen de Salta">
+                        <p class="title-card">Salta</p>
+                        <div class="varg-item-detail">
+                            <h3 class="varg-item-detail-title">Salta</h3>
+                            <p class="varg-item-detail-info">desde U$S 4000</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/sanjuan.jpg" alt="Imagen San Juan Valle de la Luna">
+                        <p class="title-card">San Juan</p>
+                        <div class="varg-item-detail">
+                            <h3 class="varg-item-detail-title">Valle de la Luna</h3>
+                            <p class="varg-item-detail-info">desde U$S 3500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/santafe.jpg" alt="Imagen Santa Fe">
+                        <p class="title-card">Santa Fe</p>
+                        <div class="varg-item-detail">
+                            <h3 class="varg-item-detail-title">Santa Fe</h3>
+                            <p class="varg-item-detail-info">desde U$S 3800</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+                <div class="varg-item">
+                        <img class="varg-item-img" src="./statics/img/tierradelfuego.jpg" alt="Tierra del Fuego Glacier Martial">
+                        <p class="title-card">Tierra del Fuego</p>
+                        <div class="varg-item-detail">
+                            <h3 class="varg-item-detail-title">Glacier Martial</h3>
+                            <p class="varg-item-detail-info">desde U$S 4500</p>
+                            <a href="" class="btn-card">Ver mas</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+   </main>
     <footer>
-        <p>2024. Todos los derechos reservados.</p>
+        <div class="container-footer">
+			<div class="footer-content">
+				<h3>Contacto</h3>
+				<p>Email: Info@ejemplo.com</p>
+				<p>Tel: 777-77777</p>
+				<p>Direccion: Address 1234 street</p>
+			</div>
+			<div class="footer-content">
+				<h3>Links</h3>
+				<ul class="links">
+					<li><a href="">Destinos</a></li>
+					<li><a href="">Quienes somos</a></li>
+				</ul>
+			</div>
+			<div class="footer-content">
+				<h3>Redes Sociales</h3>
+				<ul class="icon-social">
+					<li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+					<li><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="p-final">
+			<p>&copy; 2024. Todos los derechos reservados.</p>
+		</div>
     </footer>
 </body>
 </html>
